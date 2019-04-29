@@ -73,6 +73,8 @@ ul li{
     text-align: center;
 }
 
+
+
 .custom-font{
     font-family: var(--main-font-family);
     font-size: 6rem;
@@ -155,7 +157,6 @@ header{
     bottom: 0;
     transform: rotate(45deg);
 }
-
 
 
 .nav{
@@ -274,7 +275,6 @@ header{
 }
 
 
-/*Nav*/
 
 /*About*/
 .btn-info{
