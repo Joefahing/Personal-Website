@@ -65,13 +65,31 @@ ul li{
     text-transform: uppercase;
     border-radius: 4px;
     transition: all 650ms;
-
 }
+
 
 .between-section{
     padding: 20rem 0;
     text-align: center;
-    
+}
+
+.custom-font{
+    font-family: var(--main-font-family);
+    font-size: 6rem;
+    font-weight: 100;
+    line-height: 1;
+    color: var(--main-font-color);
+    user-select: none;
+    margin-bottom: 1rem;
+}
+
+.custom-font-secondary{
+    margin-bottom: 2rem;
+    margin-right: -3px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.8rem;
+    color: var(--main-font-gray-color);
 }
 
 
@@ -88,6 +106,58 @@ header{
     text-align: center;
 }
 
+
+/*Header Toggle*/
+.menu{
+    padding: 2rem 2.5rem;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.menu .bar,
+.menu .bar::before,
+.menu .bar::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 4rem;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: 650ms;
+    margin: auto;
+    background-color: var(--main-white-color);
+}
+
+.menu .bar::before{
+    top: -2rem;
+}
+
+.menu .bar::after{
+    bottom: -2rem;
+}
+
+.active .bar{
+    background-color: transparent;
+}
+.active .bar::before{
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.active .bar::after{
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+
+
 .nav{
     width: 100%;
     height: 6rem;
@@ -95,6 +165,51 @@ header{
     position: relative;
 }
 
+.overlay{
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 20;
+    transition: all 650ms;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.overlay.menu-open{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.nav .overlay ul{
+    position: relative;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav .overlay ul li{
+    text-transform: uppercase;
+}
+
+.nav .overlay ul li a{
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    margin-right: -4px;
+    transition: all 650ms;
+}
+
+.nav .overlay ul li a:hover{
+    color: var(--main-font-color);
+}
+
+
+
+/*Header Content*/
 .main-text{
     line-height: 0;
     margin: auto;
@@ -112,9 +227,9 @@ header{
 
 .main-text h2{
     text-transform: uppercase;
-    letter-spacing: 5px;
-    margin-right: -5px;
-    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    font-size: 1.5rem;
     line-height:1;
     position: relative;
 }
@@ -132,11 +247,11 @@ header{
 }
 
 .main-text h2::before{
-    left: -2rem;
+    left: -6rem;
 }
 
 .main-text h2::after{
-    right: -2rem;
+    right: -6rem;
 }
 
 .resume-btn{
@@ -159,17 +274,28 @@ header{
 }
 
 
-
-.overlay{
-    opacity: 0;
-}
-
-
-
 /*Nav*/
 
-
 /*About*/
+.btn-info{
+    color: var(--main-font-color);
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-bottom: 2px solid var(--main-font-color);
+    margin: 2rem 0 2rem 0;
+}
+
+.btn-info:hover{
+    color: var(--main-white-color);
+    background-color: var(--main-font-color);
+}
+
+.about-me-img{
+    width: 100%;
+    min-height: 30rem;
+    background: url("images/about.jpg") center no-repeat;
+    background-size: cover;
+}
 
 /*Experience*/
 
