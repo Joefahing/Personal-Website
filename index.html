@@ -21,6 +21,7 @@
         </div>
 
         <nav class="nav">
+            <div id="logo"></div>
             <div class="overlay">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -41,16 +42,20 @@
     </header>
 
     <section id="about" class="about-me">
-        <div class="container">
-            <h1 class="custom-font">Discover</h1>
-            <h2 class="custom-font-secondary story">About Me</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt harum maiores necessitatibus. Dolorem temporibus molestiae,
-                possimus ipsa perferendis incidunt tenetur dignissimos qui magni repudiandae repellat.
-            </p>
-            <a href="#" class="btn btn-info">More Info</a>
-            <div class="about-me-img"></div>
+        <div class="container about-me-container">
+            <div class="center add-padding-right">
+                <h1 class="custom-font">Discover</h1>
+                <h2 class="custom-font-secondary story">About Me</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad,
+                    incidunt harum distinctio consequuntur aspernatur doloremque.
+                    Dolorem magnam atque omnis ad? Mollitia incidunt magni,
+                    consequuntur harum placeat fuga libero ea corporis?
+                </p>
+                <a href="#" class="btn btn-info">More Info</a>
+            </div>
+
+            <div class="about-me-img add-flex"></div>
         </div>
     </section>
 
@@ -62,54 +67,63 @@
     <section id="experience" class="personal-experience">
         <div class="container">
             <h1 class="custom-font">Personal Experience</h1>
-            <h2 class="custom-font-secondary techologies">Techologies</h2>
 
-            <div class="experience-container">
-                <div class="experience-container-item">
-                    <h3 class="custom-font-title">Comfort</h3>
-                    <ul>
-                        <li>Javascript</li>
-                        <li>Java</li>
-                        <li>Swift</li>
-                        <li>HTML/CSS</li>
-                        <li>Node.js</li>
-                    </ul>
+            <div class="personal-container">
+                <div class="personal-container-item">
+                    <h2 class="custom-font-secondary techologies">Techologies</h2>
+
+                    <div class="experience-container">
+                        <div class="experience-container-item">
+                            <h3 class="custom-font-title">Comfort</h3>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>Java</li>
+                                <li>Swift</li>
+                                <li>HTML/CSS</li>
+                                <li>Node.js</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-container-item">
+                            <h3 class="custom-font-title">Experience</h3>
+                            <ul>
+                                <li>Android</li>
+                                <li>Vue.js</li>
+                                <li>C++</li>
+                                <li>C#</li>
+                                <li>Ruby on Rails(Beginner)</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="experience-container-item">
-                    <h3 class="custom-font-title">Experience</h3>
-                    <ul>
-                        <li>Android</li>
-                        <li>Vue.js</li>
-                        <li>C++</li>
-                        <li>C#</li>
-                        <li>Ruby on Rails(Beginner)</li>
-                    </ul>
+                <div class="personal-container-item">
+                    <h2 class="custom-font-secondary work-experience">Work Experience</h2>
+                    <div class="work-container">
+                        <div class="work-section">
+                            <h3 class="custom-font-title">Research Assitance</h3>
+                            <h4 class="custom-font-text">University of Windsor, Windsor, CA, 2016-2017</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Qui eum tenetur ipsa illo explicabo, mollitia facere unde odio minus
+                                blanditiis sequi ad quos molestiae quis.
+                            </p>
+                        </div>
+
+                        <div class="work-section">
+                            <h3 class="custom-font-title">C# Tutor</h3>
+                            <h4 class="custom-font-text">University of Windsor, Windsor, Ca, 2017-2018</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Facere blanditiis dicta perspiciatis magnam, distinctio sunt est autem nemo,
+                                reprehenderit at rerum possimus soluta, ducimus eveniet.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <h2 class="custom-font-secondary work-experience">Work Experience</h2>
-            <div class="work-container">
-                <div class="work-section">
-                    <h3 class="custom-font-title">Research Assitance</h3>
-                    <h4 class="custom-font-text">University of Windsor, Windsor, CA, 2016-2017</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Qui eum tenetur ipsa illo explicabo, mollitia facere unde odio minus
-                        blanditiis sequi ad quos molestiae quis.
-                    </p>
-                </div>
 
-                <div class="work-section">
-                    <h3 class="custom-font-title">C# Tutor</h3>
-                    <h4 class="custom-font-text">University of Windsor, Windsor, Ca, 2017-2018</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Facere blanditiis dicta perspiciatis magnam, distinctio sunt est autem nemo,
-                        reprehenderit at rerum possimus soluta, ducimus eveniet.
-                    </p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -145,7 +159,8 @@
                         Illum unde nisi magni asperiores quisquam atque aut,
                         officiis ad reiciendis consequatur.
                     </p>
-                    <a href="https://github.com/Joefahing/File-Management-System" class="btn btn-project" target="_blank">Learn More</a>
+                    <a href="https://github.com/Joefahing/File-Management-System" class="btn btn-project"
+                        target="_blank">Learn More</a>
                 </div>
 
                 <div class="card">
@@ -156,7 +171,8 @@
                         Officia molestiae eos minus magnam est temporibus repellendus voluptatem perferendis
                         labore ratione.
                     </p>
-                    <a href="https://github.com/Joefahing/RealEstate" target="_blank" class="btn btn-project">Learn More</a>
+                    <a href="https://github.com/Joefahing/RealEstate" target="_blank" class="btn btn-project">Learn
+                        More</a>
                 </div>
 
             </div>
@@ -164,25 +180,27 @@
     </section>
 
     <section id="contact" class="contact-us">
-        <div class="container">
-            <h1 class="custom-font">Contact</h1>
-            <h2 class="custom-font-secondary">Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eaque eius sint, excepturi quisquam natus amet autem distinctio quod sed possimus magni ipsam sequi
-                vero
-                impedit dignissimos nam,
-                id sit minima!
-            </p>
-       
+        <div class="container contact-container">
+            <div class="center add-padding-right">
+                <h1 class="custom-font">Contact</h1>
+                <h2 class="custom-font-secondary">Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eaque eius sint, excepturi quisquam natus amet autem distinctio quod sed possimus magni ipsam sequi
+                    vero
+                    impedit dignissimos nam,
+                    id sit minima!
+                </p>
+            </div>
 
-        <div class="form-container">
-            <form action="">
-                <input type="text" placeholder="Full Name" name="name" class="input" required>
-                <input type="text" placeholder="Email Address" name="email" class="input" required>
-                <textarea name="message" class="text-area" placeholder="What can we help you with?" required></textarea>
-                <input type="submit" class="btn submit-btn">
-            </form>
-        </div>
+            <div class="form-container add-flex">
+                <form action="">
+                    <input type="text" placeholder="Full Name" name="name" class="input" required>
+                    <input type="text" placeholder="Email Address" name="email" class="input" required>
+                    <textarea name="message" class="text-area" placeholder="What can we help you with?"
+                        required></textarea>
+                    <input type="submit" class="btn submit-btn">
+                </form>
+            </div>
 
         </div>
     </section>

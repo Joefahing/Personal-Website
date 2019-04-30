@@ -15,6 +15,10 @@ html
     scroll-behavior: smooth
 }
 
+body{
+    overflow-x: hidden;
+}
+
 
 /*Temperary*/
 img{
@@ -368,6 +372,7 @@ header{
 
 .card{
     width: 27rem;
+    height: 50rem;
     background-color: #eef5f6;
     display: flex;
     flex-direction: column;
@@ -376,6 +381,7 @@ header{
     margin-bottom: 2.5rem;
     box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.4);
     border-radius: 3px;
+    position: relative
 }
 
 .card-title{
@@ -385,8 +391,9 @@ header{
 .btn-project{
     padding: 1rem 2.5rem;
     background-color: #ffb6ae;
-    margin: 2rem 0;
     font-size: 1.3rem;
+    position: absolute;
+    bottom: 2rem;
 }
 
 .btn-project:hover{
@@ -472,5 +479,117 @@ footer .email{
    color:#a6fbdf;
 }
 
+/*This section will contain css for desktop interface*/
+@media screen and (min-width:660px){
 
-/**/
+    header,
+    .between-section{
+        background-attachment: fixed;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .nav{
+        display:flex;
+        padding: 2rem 10rem 0;
+        justify-content: space-between;
+    }
+
+    .nav .overlay{
+        position: initial;
+        opacity: initial;
+        transform: initial;
+        background: none;
+    }
+
+    .nav .overlay ul{
+        flex-direction: row;
+        list-style: none;
+        margin-top: 2px;
+    }
+
+    .nav .overlay ul li a{
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin-right: -1px;
+        padding: 0 2rem;
+    }
+
+
+    .about-me-container,
+    .contact-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        margin: 2rem;
+    }
+
+    .add-flex{
+        flex: 1;
+    }
+
+    .center{
+        flex: 1;
+    }
+
+    .add-padding-right{
+        padding-right: 10rem;
+    }
+
+
+    .personal-container{
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        align-content: space-between;
+        margin-top: 5rem;
+    }
+
+    .personal-container-item{
+        width: 50%;
+    }
+
+    .social-contact{
+        justify-content: center;
+    }
+
+    .social-contact li{
+        padding: 0 1.5rem;
+    }
+
+
+
+   /* @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to{
+            opacity: 1;
+        }
+    }
+
+    .card:nth-child(1){
+        animation: fadeIn .5s .5s backwards;
+    }
+
+    .card:nth-child(2){
+        animation: fadeIn .5s 1s backwards;
+    }
+    .card:nth-child(3){
+        animation: fadeIn .5s 1.5s backwards;
+    }*/
+
+}
