@@ -434,3 +434,40 @@ header{
 }
 /*Footer*/
 
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: #f2877c;
+}
+
+footer .email{
+    margin: 2rem 0;
+    color: var(--main-white-color);
+    letter-spacing: 3px;
+    margin-right: -3px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.social-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-contact i{
+    font-size: 3rem;
+}
+
+.fa-facebook:hover, 
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-github:hover{
+   color:#a6fbdf;
+}
