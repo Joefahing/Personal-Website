@@ -375,6 +375,7 @@ header{
     align-items: center;
     margin-bottom: 2.5rem;
     box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
 }
 
 .card-title{
@@ -398,9 +399,38 @@ header{
     box-shadow: none;
 }
 
-
-/*Contact*/
-
 /*Form*/
+.form-container{
+    width: 100%;
+    min-width: 9rem;
+    margin-top: 5rem;
+}
 
+.input,
+.text-area{
+    width: 100%;
+    max-width: 100%;
+    margin: .6rem 0;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    border: 1px solid var(--main-font-color);
+    font-size: 1.4rem;
+}
+
+.text-area{
+    height: 10rem;
+}
+
+.submit-btn{
+    width: 100%;
+    padding: 1.4rem 1rem;
+    background-color: var(--main-font-color);
+    color: var(--main-white-color);
+    border: none;
+}
+
+.submit-btn:hover{
+    background-color: #ffb6ae
+}
 /*Footer*/
+
