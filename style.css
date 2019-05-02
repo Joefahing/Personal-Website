@@ -495,10 +495,6 @@ footer .email{
 /*This section will contain css for desktop interface*/
 @media screen and (min-width:660px){
 
-    header,
-    .between-section{
-        background-attachment: fixed;
-    }
 
     .menu{
         display: none;
